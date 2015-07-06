@@ -73,7 +73,8 @@ $(document).ready(function() {
 	}
 
 	generarDe = function () {
-		return 3
+		var r = Math.random();
+		return Math.round(2*r+2);
 	}
 
 	genlognormal = function (media, varianza) {
