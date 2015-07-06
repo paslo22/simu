@@ -33,12 +33,6 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
                 <a class="navbar-brand" href="#">Simulación - Trabajo Práctico - 2015</a>
             </div>
 
@@ -58,7 +52,8 @@
                 <hr>
 
                 <!-- Preview Image -->
-                <img class="img-responsive" src="/utntpsimu.png" alt="">
+                <center>
+                <img class="img-responsive" src="utntpsimu.png" alt=""></center>
 
                 <hr>
 
@@ -75,16 +70,60 @@
                 <!-- Blog Comments -->
 
                 <!-- Comments Form -->
-                <div class="well">
+                <div class="well col-lg-4 col-lg-offset-1">
+                    <div class="container">
                     <h4>Cantidad de corridas:</h4>
-                    <form role="form">
-                        <div class="form-group">
-                            <input type="number" name="cantCorridas">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Simular</button>
-                    </form>
+                    <div class="form-group">
+                        <input id="cantCorridas" type="number" name="cantCorridas">
+                    </div>
+                    <h4>Tiempo final:</h4>
+                    <div class="form-group">
+                        <input id="timeFinal" type="number" name="timeFinal">
+                    </div> 
+                    <h4>Tama&ntilde;o de pedido:</h4>
+                    <div class="form-group">
+                        <input id="tp" type="number" name="tp">
+                    </div> 
+                    <h4>Costo de almacenamiento:</h4>
+                    <div class="form-group">
+                        <input id="calm" type="number" name="calm">
+                    </div> 
+                    <h4>Costo de venta perdidas:</h4>
+                    <div class="form-group">
+                        <input id="cvp" type="number" name="cvp">
+                    </div> 
+                    <h4>Precio de compra:</h4>
+                    <div class="form-group">
+                        <input id="pc" type="number" name="pc">
+                    </div> 
+                    <h4>Precio de venta:</h4>
+                    <div class="form-group">
+                        <input id="pv" type="number" name="pv">
+                    </div>
+                    <button id="simular" type="submit" class="btn btn-primary">Simular</button>
+                    </div>
                 </div>
+                <div class="well col-lg-6 col-lg-offset-1">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        #
+                                    </th>
+                                    <th>
+                                        Ganancia
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultados">
 
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
                 <hr>
 
 
@@ -100,6 +139,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
