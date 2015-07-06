@@ -3,143 +3,169 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <title>Simulación - Trabajo Práctico</title>
+	<title>Simulación - Trabajo Práctico</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/blog-post.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/blog-post.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 
 </head>
 
 <body bgcolor="#ff0000">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Simulación - Trabajo Práctico - 2015</a>
-            </div>
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Simulación - Trabajo Práctico - 2015</a>
+			</div>
 
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
 
-    <!-- Page Content -->
-    <div class="container">
+	<!-- Page Content -->
+	<div class="container">
 
-        <div class="row">
+		<div class="row">
 
-            <!-- Blog Post Content Column -->
-            <div  class="col-lg-12">
+			<!-- Blog Post Content Column -->
+			<div  class="col-lg-12">
 
-                <hr>
+				<hr>
 
-                <!-- Preview Image -->
-                <center>
-                <img class="img-responsive" src="utntpsimu.png" alt=""></center>
+				<!-- Preview Image -->
+				<center>
+				<img class="img-responsive" src="utntpsimu.png" alt=""></center>
 
-                <hr>
+				<hr>
 
-                <!-- Post Content -->
-                <p class="lead">Escenario "Instituto de la Mujer"</p>
-                <p>Un consultorio consta de una sala de espera con una cantidad de 5                       sillas y un solo medico para la atención de las pacientes. A dicho                         consultorio arriban pacientes entre 15 y 20 minutos. El tiempo de atención                 de las pacientes se conoce al momento en que ingresan al consultorio ya                   que depende de si es la primera vez que se atienden o si ya son pacientes                 regulares. Todas las pacientes que llegan y se pueden sentar están                         dispuestas a esperar. Si no se pueden sentar se retiran una cantidad                       determinada por una fdp conocida.<br> 
-                <br>    
-                <u><b>Objetivo:</b></u><br>
-                Se desea conocer el porcentaje de                       pacientes que se                   retiraron por falta de espacio, el porcentaje de tiempo                                   ocioso del medico,  para considerar una mudanza a otro consultorio  con                   mas espacio.</p>
-
-
-                <hr>
-
-                <!-- Blog Comments -->
-
-                <!-- Comments Form -->
-                <div class="well col-lg-4 col-lg-offset-1">
-                    <div class="container">
-                    <h4>Cantidad de corridas:</h4>
-                    <div class="form-group">
-                        <input id="cantCorridas" type="number" name="cantCorridas">
-                    </div>
-                    <h4>Tiempo final:</h4>
-                    <div class="form-group">
-                        <input id="timeFinal" type="number" name="timeFinal">
-                    </div> 
-                    <h4>Tama&ntilde;o de pedido:</h4>
-                    <div class="form-group">
-                        <input id="tp" type="number" name="tp">
-                    </div> 
-                    <h4>Costo de almacenamiento:</h4>
-                    <div class="form-group">
-                        <input id="calm" type="number" name="calm">
-                    </div> 
-                    <h4>Costo de venta perdidas:</h4>
-                    <div class="form-group">
-                        <input id="cvp" type="number" name="cvp">
-                    </div> 
-                    <h4>Precio de compra:</h4>
-                    <div class="form-group">
-                        <input id="pc" type="number" name="pc">
-                    </div> 
-                    <h4>Precio de venta:</h4>
-                    <div class="form-group">
-                        <input id="pv" type="number" name="pv">
-                    </div>
-                    <button id="simular" type="submit" class="btn btn-primary">Simular</button>
-                    </div>
-                </div>
-                <div class="well col-lg-6 col-lg-offset-1">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        #
-                                    </th>
-                                    <th>
-                                        Ganancia
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody id="resultados">
-
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                </div>
-                <hr>
+				<!-- Post Content -->
+				<p class="lead">Escenario "Instituto de la Mujer"</p>
+				<p>Un consultorio consta de una sala de espera con una cantidad de 5                       sillas y un solo medico para la atención de las pacientes. A dicho                         consultorio arriban pacientes entre 15 y 20 minutos. El tiempo de atención                 de las pacientes se conoce al momento en que ingresan al consultorio ya                   que depende de si es la primera vez que se atienden o si ya son pacientes                 regulares. Todas las pacientes que llegan y se pueden sentar están                         dispuestas a esperar. Si no se pueden sentar se retiran una cantidad                       determinada por una fdp conocida.<br> 
+				<br>    
+				<u><b>Objetivo:</b></u><br>
+				Se desea conocer el porcentaje de                       pacientes que se                   retiraron por falta de espacio, el porcentaje de tiempo                                   ocioso del medico,  para considerar una mudanza a otro consultorio  con                   mas espacio.</p>
 
 
-            </div>
+				<hr>
 
-        </div>
+				<!-- Blog Comments -->
 
-    </div>
-    <!-- /.container -->
+				<!-- Comments Form -->
+				<div class="well col-lg-4">
+					<div class="container">
+						<div class="form-horizontal col-lg-3">
+							<h4>Cantidad de corridas:</h4>
+							<div class="form-group">
+								<input id="cantCorridas" type="number" name="cantCorridas" class="form-control">
+							</div>
+							<h4>Días a simular:</h4>
+							<div class="form-group">
+								<input id="timeFinal" type="number" name="timeFinal" class="form-control">
+							</div> 
+							<h4>Tama&ntilde;o de pedido:</h4>
+							<div class="form-group">
+								<input id="tp" type="number" name="tp" class="form-control">
+							</div> 
+							<h4>Costo de almacenamiento:</h4>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">$</span>
+									<input id="calm" type="number" name="calm" class="form-control">
+								</div> 
+							</div> 
+							<h4>Costo de venta perdidas:</h4>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">$</span>
+									<input id="cvp" type="number" name="cvp" class="form-control">
+								</div> 
+							</div> 
+							<h4>Precio de compra:</h4>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">$</span>
+									<input id="pc" type="number" name="pc" class="form-control">
+								</div> 
+							</div> 
+							<h4>Precio de venta:</h4>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">$</span>
+									<input id="pv" type="number" name="pv" class="form-control">
+								</div>
+							</div>
+							<button id="simular" type="submit" class="btn btn-primary">Simular</button>
+						</div>
+					</div>
+				</div>
+				<div class="well col-lg-7 col-lg-offset-1">
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										#
+									</th>
+									<th>
+										Venta
+									</th>
+									<th>
+										Costo de almacenamiento
+									</th>
+									<th>
+										Costo de ventas perdidas
+									</th>
+									<th>
+										Compra
+									</th>
+									<th>
+										Ganancia
+									</th>
+								</tr>
+							</thead>
+							<tbody id="resultados">
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+							</tbody>
+						</table>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+					</div>
+
+				</div>
+				<hr>
+
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /.container -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 
